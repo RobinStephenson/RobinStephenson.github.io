@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Robin Stephenson's blog</title>
+    <title>Robin Stephenson's blog - {{page.title}}</title>
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
     <header>
-        <h1>Robin Stephenson's blog</h1>
+        <h1>Robin Stephenson's blog - {{page.title}}</h1>
         <nav>
             <ul>
-                <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-                <li><a href="{{site.baseurl}}/about.html">About</a></li>
+                <li><a href="{{site.baseurl}}/index.html" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+                <li><a href="{{site.baseurl}}/about.html" class="{% if page.url == '/about.html' %}current{% endif %}">About</a></li>
             </ul>
         </nav>
     </header>
