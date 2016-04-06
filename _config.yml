@@ -1,1 +1,3 @@
 exclude: ["README.md", "CNAME"]
+gems:
+  - jekyll-sitemap
