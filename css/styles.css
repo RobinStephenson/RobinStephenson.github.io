@@ -1,0 +1,63 @@
+.margin-s-top {
+    margin-top: 1em;
+}
+.margin-m-top {
+    margin-top: 2em;
+}
+.margin-l-top {
+    margin-top: 4em;
+}
+.margin-xl-top {
+    margin-top: 6em;
+}
+.margin-l-right {
+    margin-right: 4em;
+}
+
+.horizontal-center {
+    text-align: center;
+}
+
+footer {
+    line-height: 200%;
+    margin-bottom: 2em;
+}
+
+article {
+    max-width: 1140px;
+    width: 100%;
+}
+
+.project-desc {
+    background-color: #ecf0f1;
+    padding: 1em;
+}
+.project-desc h3 {
+    margin-top: 0;
+}
+
+header button {
+    height: 3em;
+    width: 100%
+}
+header .btn {
+    background-color: #e84834;
+    color: #ecf0f1;
+}
+header .btn:hover {
+    background-color: #f2523f;
+    color: #fefefe;
+}
+header {
+    max-width: 750px;
+    width: 85%;
+    margin: 0 auto 0 auto;
+}
+header img {
+    display: block;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 0;
+}

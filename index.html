@@ -1,14 +1,133 @@
----
-layout: default
-title: Home
----
-<div id="posts">
-    <ul>
-        {% for post in site.posts %}
-        <li>
-            <a href="{{site.baseurl}}{{post.url}}">{{post.date | date_to_string}} &raquo; {{post.title}}</a> 
-            <p>{{post.meta}}</p>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <title>Robin Stephenson - Software Engineer</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse-target" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <b><a class="navbar-brand" href="#">robins.tech</a></b>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="nav-collapse-target">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
+
+    <div class="container margin-l-top">
+        <header name="top">
+            <div class="row">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=25&txt=270%C3%97270&w=270&h=270" class="img-circle col-md-4 horizontal-center">
+                <div class="col-md-8">
+                    <h1>Robin Stephenson </h1>
+                    <ul>
+                        <li><h4>Passionate software engineer</h4></li>
+                        <li><h4>Studying computer science at the University of York</h4></li>
+                        <li><h4>Experience in Python, Java, JavaScript, HTML, CSS and MySQL</h4></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main-buttons" class="margin-m-top horizontal-center">
+                    <button type="button" class="btn btn-lg">
+                        Download my full CV
+                    </button>
+            </div>
+        </header>
+
+        <article class="margin-xl-top">
+            <img src="images/placeholder.png" class="img-responsive">
+            <div class="project-desc">
+                <h3>
+                    Project title
+                </h3>
+                <p>
+                    This is a short description of the project.
+                </p>
+                <a href="#">Read more</a> or <a href="#">sell all my projects</a>
+            </div>
+        </article>
+
+        <article class="margin-xl-top">
+            <h3>
+                Post title goes here
+            </h3>
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </p>
+            <a href="#">Read more</a> or <a href="#">see all my posts</a>
+        </article>
+
+        <article class="margin-xl-top">
+            <img src="images/placeholder.png" class="img-responsive">
+            <div class="project-desc">
+                <h3>
+                    Project title
+                </h3>
+                <p>
+                    This is a short description of the project.
+                </p>
+                <a href="#">Read more</a> or <a href="#">sell all my projects</a>
+            </div>
+        </article>
+
+        <article class="margin-xl-top">
+            <h3>
+                Post title goes here
+            </h3>
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </p>
+            <a href="#">Read more</a> or <a href="#">see all my posts</a>
+        </article>
+        <div class="horizontal-center margin-l-top">
+            <a href="#top">
+                <button type="button" class="btn btn-default margin-m-top " aria-label="scroll to top">
+                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> Scroll to top
+                </button>
+            </a>
+        </div>
+
+        <hr>
+
+        <footer class="row">
+            <aside class="col-sm-6">
+                <h4>Profiles</h4>
+                <ul>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
+                    <li>Twitter</li>
+                </ul>
+            </aside>
+            <aside class="col-sm-6">
+                <h4>Contact details</h4>
+                <ul>
+                    <li>07115214309</li>
+                    <li>hello@robins.tech</li>
+                </ul>
+            </aside>
+            
+        </footer>
+    </div>
+</body>
+</html>
